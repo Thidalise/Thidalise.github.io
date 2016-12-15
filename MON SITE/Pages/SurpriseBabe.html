@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Thida-Lise Thiounn--SurpriseBabe</title>
+    <link rel="stylesheet" href="./../Game/tetris/blockrain.css">
+    <link rel="stylesheet" href="./../style.css" media="screen" charset="utf-8">
+    <link rel="icon" href="./../favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Anton|Open+Sans" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <header>
+      <a href="./../index.html"> <img src="./../favicon.png" alt="cercle bleu"></a>
+      <a href="./../index.html"> <h1 class="SiteTitle"> Thida-Lise <br> Thiounn </h1></a>
+
+      <nav class="menu">
+        <a href="./../Pages/Projets.html">Projets</a>
+        <a href="./../Pages/Biographie.html">Biographie</a>
+        <a href="./../Pages/Contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <div class="colonne">
+          <section>
+            <h2 class="Surprise--Titre"> Surprise Babe ! </h2>
+            <figure>
+            <img src="./../Images/Fiesta.gif" alt="Squelettes qui dansent">
+            </figure>
+          </section>
+        </div>
+
+        <div class="colonne2">
+          <div class="game" id="tetris-demo" style="width:250px;height:600px;"></div>
+          <script src="./../Game/tetris/jquery-1.11.1.min.js"></script>
+          <script src="./../Game/tetris/blockrain.jquery.libs.js"></script>
+          <script src="./../Game/tetris/blockrain.jquery.src.js"></script>
+          <script>
+          window.BlockrainThemes = {
+            'thida': {
+              background: '#ffffff',
+              primary: null,
+              secondary: null,
+              stroke: '#000000',
+              innerStroke: '#000000',
+              blocks: {
+                line: '#e7b727',
+                square: '#7fe736',
+                arrow: '#38c9d7',
+                rightHook: '#1f21f5',
+                leftHook: '#42f0ac',
+                rightZag: '#d73889',
+                leftZag: '#93fa1e'
+              }
+            }
+          };
+              var $demo = $('#tetris-demo').blockrain({
+                  speed: 20,
+                  theme: 'thida',
+                  playText: 'A toi de jouer',
+                  playButtonText: 'Play',
+                  gameOverText: 'Mouhahaha tu as perdu',
+                  restartButtonText: 'Play Again',
+                  scoreText: 'Score',
+              });
+          </script>
+        </div>
+      </section>
+
+
+    </main>
+
+    <footer>
+    Copyright 2016 Thida-Lise
+    </footer>
+
+  </body>
+</html>
