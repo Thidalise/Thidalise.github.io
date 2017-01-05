@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Thida-Lise--Game</title>
+    <link rel="stylesheet" href="./../style.css" media="screen"charset="utf-8" >
+    <link rel="stylesheet" href="./../Game/tetris/blockrain.css">
+    <link rel="icon" href="./../favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  </head>
+
+  <body>
+    <header>
+      <a href="./Game.html"> <img src="./../favicon.png" alt="cercle bleu"></a>
+      <a href="./../index.html"> <h1 class="SiteTitle">Thida-Lise</h1></a>
+
+    </header>
+
+    <main>
+      <section>
+        <div class="boite">
+          <div class="colonne--menu">
+            <nav class="menu">
+              <a href="./Projets.html">Projets</a>
+              <a href="./Bio.html">Qui suis-je ?</a>
+              <a href="./Contact.html">Contact</a>
+            </nav>
+          </div>
+
+          <div class="colonne1">
+            <section>
+              <h2 class="Titre--Page">Surprise !</h2>
+              <p class="Texte">
+              Bonne chance!</p>
+            </section>
+            <section>
+              <div class="game" id="tetris-demo" style="width:100% ;height:600px;"></div>
+    <script src="./../Game/tetris/jquery-1.11.1.min.js"></script>
+    <script src="./../Game/tetris/blockrain.jquery.libs.js"></script>
+    <script src="./../Game/tetris/blockrain.jquery.src.js"></script>
+    <script>
+    window.BlockrainThemes = {
+      'thida': {
+        background: '#e9e5e5',
+        primary: null,
+        secondary: null,
+        stroke: '#ffffff',
+        innerStroke:null ,
+        blocks: {
+          line: '#e7b727',
+          square: '#7fe736',
+          arrow: '#38c9d7',
+          rightHook: '#6566e0',
+          leftHook: '#42f0ac',
+          rightZag: '#df72a9',
+          leftZag: '#a5e35e'
+        }
+      }
+    };
+        var $demo = $('#tetris-demo').blockrain({
+            speed: 20,
+            theme: 'thida',
+            playText: 'A toi de jouer',
+            playButtonText: 'Play',
+            gameOverText: 'Perdu',
+            restartButtonText: 'Play Again',
+            scoreText: 'Score',
+        });
+    </script>
+            </section>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      Copyright 2017 Thida-Lise
+    </footer>
+  </body>
+</html>
