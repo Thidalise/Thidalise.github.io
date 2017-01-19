@@ -6,7 +6,7 @@ html*{box-sizing: border-box;}
 html{
   font-family: 'Open Sans', sans-serif;
   font-weight: lighter;
-  font-size: 16px;
+  font-size: 12px;
   font-style: normal;
   background-color: white;
   margin: 4em;
@@ -16,26 +16,10 @@ html{
 a{
   color: rgb(0, 0, 0);
   text-decoration: none ;
+  margin-bottom: 1.5em;
 }
 
-/******COMMUN A TOUTES LES PAGES******/
-/*Le titre du site*/
-.SiteTitle {
-  font-family: 'Anton',sans-serif;
-  font-weight: bold;
-  font-size: 4em;
-}
-
-/*navigation=menu*/
-.menu {
-  font-weight: lighter;
-  font-size: 1.5em;
-
-  display: flex;
-  flex-direction: column;
-}
-
-/*colonne*/
+/******Mise en page = 3 colonnes *****/
 .boite{
   display: flex;
 }
@@ -45,116 +29,157 @@ a{
   max-width: 100%;
 }
 
-.colonne{
+.colonne--menu{
   width: 20%;
-  padding-top: 3em;
-}
+  padding-top: 1.5em;
+    }
+
+.colonne1{
+  width: 39%;
+  padding-left: 1%;
+  margin-top: 12em;
+  }
 
 .colonne2{
-  width: 78%;
-  padding-top: 3em;
-  padding-left: 2%;
+  width: 39%;
+  padding-left: 1%;
+  margin-top: 12em;
 }
 
-/*images*/
-img{
-  max-width: 100%;
-  height: auto;
+.colonne--projets{
+  width: 78%;
+  padding-left: 2%;
+  margin-top: 12em;
 }
-figure{
-  width: 80%;
+/*-----------------------------------------------*/
+/*Le titre du site*/
+.SiteTitle {
+  font-family: 'Open Sans',sans-serif;
+  font-weight: bold;
+  font-size: 2em;
+  margin-top: 1.5em;
 }
+
+.header {
+  border-bottom: 0.8px;
+  width: 150px;
+  border-style: solid;
+  border-color: rgb(150, 150, 150);
+  padding-bottom: 2.5em;
+  margin-bottom: 1em;
+}
+
+.menu {
+  position: fixed;
+}
+
+/*navigation=menu*/
+.menu {
+  font-weight: lighter;
+  font-size: 1em;
+  display: flex;
+  flex-direction: column;
+  }
+
+a:hover {
+  text-decoration: underline;
+  color: rgb(184, 44, 132);
+}
+
+nav {
+  border-bottom: 0.8px;
+  border-style: solid;
+  border-color: rgb(150, 150, 150);
+  width: 150px;
+  }
 
 /*Pied de page*/
 footer{
   font-size: .5em;
   font-style: italic;
   text-align: center;
-  margin-top: 5em;
+  margin-top: 8em;
 }
 
-/*******ACCUEIL*******/
-/*Texte de présentation*/
-.Accueil--Texte {
-  font-weight: lighter;
-  font-size: 0.9em;
+/*images*/
+img{
+  max-width: 100%;
+  height: auto;
+  }
+
+  /*images articles*/
+  .photos-article {
+    padding-bottom: .5em;
+  }
+
+/*-------------------------------------------------*/
+/*typographies*/
+.Titre--Page {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  font-size: 1.5em;
+  margin-bottom: 1em;
 }
 
+.Texte {
+  font-family: 'Open Sans',sans-serif;
+  font-weight: normal;
+  font-size: 1em;
+  margin-bottom: 1em;
+  line-height: 150%;
+}
 
-/******PROJETS*******/
-/*Projet--Menu*/
-div{
+.Legend {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
+  font-style: italic;
+  font-size: 1em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.Accent {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  font-size: 1em;
+  margin-top: 0.8em;
+  margin-bottom: 0.5em;
+}
+
+.Anglais {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
+  font-style: italic;
+  font-size: 1em;
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+  line-height: 150%;
+}
+
+/*------------------------------------------------------*/
+/*Menu des projets*/
+div .Projets--menu {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
 
-.Projet--Menu {
-  background-color:rgb(21,37,107);
-  border-width: 20px;
-  border-style: solid;
-  border-color: rgb(21, 37, 107);
-  margin: 1.5em;
+section .Projet-menu {
+  position: relative;
+  height: 160px;
+  width: 220px;
+  overflow: hidden;
+  margin-right: 3em;
+  margin-bottom: 3em;
 }
 
-.Projet--Menu {
-width: 15em;
+section .Projet-menu figure
+{
+
 }
 
-.Projet--Menu--Titre{
-  font-family: 'Anton', sans-serif;
-  font-size: 1.5em;
-  font-weight: lighter;
-  text-align: center;
-  margin-top: .5em;
-  margin-bottom: .5em;
+section .Projet-menu figure img
+{
+  width: 100%;
+  height: 100%;
 }
-
-.Projet--Menu--image {
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 1.5em;
-}
-
-/*texte dans les projets*/
-.Projet--Titre{
-  font-family: 'Anton', sans-serif;
-  font-size: 2em;
-  font-weight: bold;
-  }
-
-  .Projet--Texte{
-    max-width: 80%;
-  display: flex;
-  flex-wrap: wrap;
-  }
-
-  /******CONTACT*******/
-  .Contact--Titre {
-    font-family: 'Anton', sans-serif;
-    font-size: 2em;
-    font-weight: bold;
-    margin-bottom: .5em;
-  }
-
-  /******BIOGRAPHIE******/
-  .Biographie--Titre {
-    font-family: 'Anton', sans-serif;
-    font-size: 2em;
-    font-weight: bold;
-    margin-bottom: .5em;
-  }
-
-  .Biographie--Texte{
-    max-width: 50%;
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  /******SURPRISE*******/
-  .Surprise--Titre {
-    font-family: 'Anton', sans-serif;
-    font-size: 2em;
-    font-weight: bold;
-    margin-bottom: .5em;
-  }
