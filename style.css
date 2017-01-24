@@ -69,10 +69,6 @@ body {
 }
 
 .header {
-  border-bottom: 0px;
-  width: 150px;
-  border-style: solid;
-  border-color: rgb(150, 150, 150);
   padding-bottom: 2.5em;
   margin-bottom: 1em;
 }
