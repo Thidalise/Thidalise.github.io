@@ -19,6 +19,14 @@ a{
   margin-bottom: 1.5em;
 }
 
+/*mise en page centrée au delà d'une certaine taille*/
+body {
+  width: 100%;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /******Mise en page = 3 colonnes *****/
 .boite{
   display: flex;
@@ -35,14 +43,14 @@ a{
     }
 
 .colonne1{
-  width: 39%;
+  width: 44%;
   padding-left: 1%;
   margin-top: 12em;
   }
 
 .colonne2{
-  width: 39%;
-  padding-left: 1%;
+  width: 32%;
+  padding-left: 3%;
   margin-top: 12em;
 }
 
@@ -55,13 +63,13 @@ a{
 /*Le titre du site*/
 .SiteTitle {
   font-family: 'Open Sans',sans-serif;
-  font-weight: bold;
+  font-weight:  normal;
   font-size: 2em;
   margin-top: 1.5em;
 }
 
 .header {
-  border-bottom: 0.8px;
+  border-bottom: 0px;
   width: 150px;
   border-style: solid;
   border-color: rgb(150, 150, 150);
@@ -87,7 +95,7 @@ a:hover {
 }
 
 nav {
-  border-bottom: 0.8px;
+  border-bottom:  0px;
   border-style: solid;
   border-color: rgb(150, 150, 150);
   width: 150px;
@@ -107,6 +115,14 @@ img{
   height: auto;
   }
 
+  /*flèche retour projet*/
+  .back {
+    height: 25%;
+    width: 25%;
+    align-self: flex-end;
+    margin-top: 2em;
+  }
+
   /*images articles*/
   .photos-article {
     padding-bottom: .5em;
@@ -117,9 +133,10 @@ img{
 .Titre--Page {
   font-family: 'Open Sans', sans-serif;
   font-weight: bold;
-  font-size: 1.5em;
+  text-decoration: overline;
+  font-size: 3em;
   margin-bottom: 1em;
-}
+  }
 
 .Texte {
   font-family: 'Open Sans',sans-serif;
@@ -156,6 +173,8 @@ img{
   line-height: 150%;
 }
 
+p {max-width: 75ch;}
+
 /*------------------------------------------------------*/
 /*Menu des projets*/
 div .Projets--menu {
@@ -166,16 +185,11 @@ div .Projets--menu {
 
 section .Projet-menu {
   position: relative;
-  height: 160px;
-  width: 220px;
+  height: 170px;
+  width: 300px;
   overflow: hidden;
-  margin-right: 3em;
-  margin-bottom: 3em;
-}
-
-section .Projet-menu figure
-{
-
+  margin-right: 2em;
+  margin-bottom: 2em;
 }
 
 section .Projet-menu figure img
