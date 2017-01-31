@@ -111,6 +111,11 @@ img{
   height: auto;
   }
 
+  .blue_face {
+    margin-top: 1em;
+    margin-bottom: 2.5em;
+  }
+
   /*flèche retour projet*/
   .back {
     height: 25%;
@@ -158,6 +163,7 @@ img{
   font-size: 1em;
   margin-top: 0.8em;
   margin-bottom: 0.5em;
+  line-height: 150%;
 }
 
 .Anglais {
