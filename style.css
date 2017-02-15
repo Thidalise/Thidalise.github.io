@@ -176,6 +176,26 @@ img{
   line-height: 150%;
 }
 
+.Titre--Anglais {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  text-decoration: overline;
+  font-size: 3em;
+  margin-bottom: 0.5em;
+  margin-top: 2.5em;
+  line-height: 120%;
+  }
+
+  .Accent--Anglais {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 1em;
+    margin-top: 0.8em;
+    margin-bottom: 0.5em;
+    line-height: 150%;
+  }
+
 p {max-width: 75ch;}
 
 /*------------------------------------------------------*/
