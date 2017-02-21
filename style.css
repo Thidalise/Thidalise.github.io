@@ -87,7 +87,7 @@ body {
 
 a:hover {
   text-decoration: underline;
-  color: rgb(184, 44, 132);
+  color: rgb(25, 148, 164);
 }
 
 nav {
@@ -99,7 +99,7 @@ nav {
 
 /*Pied de page*/
 footer{
-  font-size: .5em;
+  font-size: 1em;
   font-style: italic;
   text-align: center;
   margin-top: 8em;
@@ -109,11 +109,6 @@ footer{
 img{
   max-width: 100%;
   height: auto;
-  }
-
-  .blue_face {
-    margin-top: 1em;
-    margin-bottom: 2.5em;
   }
 
   /*flèche retour projet*/
@@ -196,6 +191,23 @@ img{
     line-height: 150%;
   }
 
+  .Titre--Menu {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+    margin-bottom: 0.5em;
+    line-height: 120%;
+    }
+
+    .Titre--Legend {
+      font-family: 'Open Sans', sans-serif;
+      font-style: italic;
+      font-weight: lighter;
+      font-size: 1em;
+      margin-bottom: 0.5em;
+      line-height: 120%;
+      }
+
 p {max-width: 75ch;}
 
 /*------------------------------------------------------*/
@@ -208,11 +220,11 @@ div .Projets--menu {
 
 section .Projet-menu {
   position: relative;
-  height: 170px;
+  height: 200px;
   width: 300px;
   overflow: hidden;
-  margin-right: 2em;
-  margin-bottom: 2em;
+  margin-right: 3em;
+  margin-bottom: 3em;
 }
 
 section .Projet-menu figure img
