@@ -55,7 +55,13 @@ body {
 }
 
 .colonne--projets{
-  width: 78%;
+  width: 38%;
+  padding-left: 2%;
+  margin-top: 12em;
+}
+
+.colonne--projets2{
+  width: 38%;
   padding-left: 2%;
   margin-top: 12em;
 }
@@ -220,8 +226,8 @@ div .Projets--menu {
 
 section .Projet-menu {
   position: relative;
-  height: 200px;
-  width: 300px;
+  height: auto;
+  width: 80%;
   overflow: hidden;
   margin-right: 3em;
   margin-bottom: 3em;
