@@ -1,0 +1,166 @@
+body {
+  background-color: rgb(255, 248, 225);
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+  }
+
+a:hover{
+  text-decoration: underline;
+}
+
+.boite {
+  display: flex;
+ flex-direction: row;
+}
+
+/*espace menu -- fixe sur toutes les pages */
+.menu {
+  flex-direction: column;
+  display: block;
+  position: fixed;
+  left: 50px;
+  top : 80px;
+  width: 25%;
+  max-width: 300px;
+  line-height: 1;
+}
+
+.nav {
+  display: flex;
+  flex-flow: row;
+  align-items: flex-end;
+  align-content: space-around;
+  flex-wrap: wrap;
+  margin-left: 350px;
+  width: 75%;
+  max-width: 1200px;
+  left: 10px;
+  top: 80px;
+}
+
+.titre {
+  font-family: 'Asul', serif;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: left;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.partie {
+  font-family: 'Palanquin', sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.article {
+  font-family: 'Palanquin', sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  text-align: left;
+}
+
+.logo{
+  width: 200px;
+  margin-top: 200px;
+}
+
+/*espace navigation intuitive -- page d'acceuil */
+.affiche-nav {
+  width: 300px;
+  margin: 60px 20px 0px 0px;
+}
+
+div img.affiche-nav:hover {
+  width: 400px;
+  margin: 10px;
+}
+
+/*espace scroll articles affiches 2018*/
+.affiche{
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  margin-left: 320px;
+}
+
+.article-animaux {
+  display: flex;
+  flex-direction: row;
+  align-content: space-around;
+  margin: auto;
+}
+
+.image-affiche{
+  width: 60%;
+  height: auto;
+  margin: 80px 20px 80px 40px;
+}
+
+.texte{
+  width:28%;
+  height: auto;
+  margin: 80px 0px 20px 20px;
+
+}
+
+.art-aff {
+  width: 100%;
+}
+
+.titre-article {
+  font-family: 'Asul', serif;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: left;
+  line-height: 1.1;
+  margin: 0;
+}
+
+.texte-article {
+  font-family: 'Palanquin', sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  text-align: justify;
+  line-height: 1.5;
+}
+
+.sous-titre {
+  font-family: 'Palanquin', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: left;
+  line-height: 1;
+  margin-top: 40px;
+}
+
+.anecdote {
+  font-family: 'Asul', serif;
+  font-size: 18px;
+  font-weight: normal;
+  text-align: justify;
+  line-height: 1.5;
+
+}
+
+/*espace scroll articles présentation*/
+.presentation {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  max-width: 1200px;
+  margin-left: 320px;
+}
+
+.pres{
+  width: 60%;
+  margin: 80px 20px 20px 40px;
+}
